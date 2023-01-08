@@ -3,7 +3,14 @@
 - hosts: all
   become: true
   tasks:
-
-  - name: Install Apache Web server
+         
+  - name: Update repository index        
     apt:
-      name: Apache2      
+      update_cache: yes
+    when: ansible_distribution == "Ubuntu"
+
+  - name: install apache2 package
+    apt:
+      name: apache2
+      state: latest
+    when: ansible_distribution in ["Debian", "Ubuntu"]
