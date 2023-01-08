@@ -6,3 +6,16 @@
 172.16.250.133 apache_package=apache2 php_packages=libapache2-mod-php
 
 
+
+## Alternatively we can have servers running for different purpose/groups.
+[web_servers]
+172.16.250.131
+
+[db_servers]
+172.16.250.132
+
+[file_servers]
+172.16.250.133
+
+
+
