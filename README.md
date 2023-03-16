@@ -2,6 +2,8 @@
 
 I would be updating this repository as I learn more on Automation with Ansible.
 
+Ansible is one amazing configuration management and provisioning utility that enables you to automate a whole lot of things, Making I.T processes seamless.
+
 # * List all servers/hosts/nodes
 
 ansible all --list-hosts
