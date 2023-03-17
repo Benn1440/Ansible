@@ -20,4 +20,4 @@ ansible all --key-file ~/.ssh/ansible -i inventory -m ping
 ansible all -m ping
 
 # * Ping/target a particular node
-ansible -i inventory databaseserver -m ping
+ansible -i inventory db_servers -m ping
