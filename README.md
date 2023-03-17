@@ -18,3 +18,6 @@ ansible all --key-file ~/.ssh/ansible -i inventory -m ping
 
 # * create an ansible config file, add default rules/paths 
 ansible all -m ping
+
+# * Ping/target a particular node
+ansible -i inventory databaseserver -m ping
