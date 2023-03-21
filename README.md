@@ -21,3 +21,9 @@ ansible all -m ping
 
 # * Ping/target a particular node
 ansible -i inventory db_servers -m ping
+
+# * Ansible Modules
+Ansible modules are packages,units,bits, library, that ansible is built around to interact with other target machines or nodes.
+Or they can be said to be units of code that can be used to control system resources or to execute system commands
+
+ansible-doc -l 
